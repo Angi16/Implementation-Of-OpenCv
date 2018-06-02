@@ -1,0 +1,14 @@
+ # Color conversion between BGR <-> Gray and BGR <-> HSV.
+ 
+ #For color conversion, we use the function cv2.cvtColor(input_image, flag) where flag determines the type of conversion.
+ 
+ #For BGR \rightarrow Gray conversion we use the flags cv2.COLOR_BGR2GRAY
+ 
+ #Similarly for BGR \rightarrow HSV, we use the flag cv2.COLOR_BGR2HSV
+ 
+ #To get other flags, just run following commands in your Python terminal :
+
+>>> import cv2
+>>> flags = [i for i in dir(cv2) if i.startswith('COLOR_')]
+>>> print flags
+
